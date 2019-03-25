@@ -1,0 +1,11 @@
+/home/n-droid/Documentos/6sem/ingenieria/Ingenieria-de-software/mapita/src/main/java/com/mycompany/mapita/modelo/AbstractDAO.java
+/home/n-droid/Documentos/6sem/ingenieria/Ingenieria-de-software/mapita/src/main/java/controlador/EliminaUsuario.java
+/home/n-droid/Documentos/6sem/ingenieria/Ingenieria-de-software/mapita/src/main/java/controlador/FilterSession.java
+/home/n-droid/Documentos/6sem/ingenieria/Ingenieria-de-software/mapita/src/main/java/com/mycompany/mapita/modelo/Marcador.java
+/home/n-droid/Documentos/6sem/ingenieria/Ingenieria-de-software/mapita/src/main/java/com/mycompany/mapita/modelo/HibernateUtil.java
+/home/n-droid/Documentos/6sem/ingenieria/Ingenieria-de-software/mapita/src/main/java/com/mycompany/mapita/modelo/UsuarioDAO.java
+/home/n-droid/Documentos/6sem/ingenieria/Ingenieria-de-software/mapita/src/main/java/com/mycompany/mapita/modelo/Usuario.java
+/home/n-droid/Documentos/6sem/ingenieria/Ingenieria-de-software/mapita/src/main/java/com/mycompany/mapita/modelo/MarcadorDAO.java
+/home/n-droid/Documentos/6sem/ingenieria/Ingenieria-de-software/mapita/src/main/java/controlador/AgregaUsuario.java
+/home/n-droid/Documentos/6sem/ingenieria/Ingenieria-de-software/mapita/src/main/java/controlador/BuscaPorNombre.java
+/home/n-droid/Documentos/6sem/ingenieria/Ingenieria-de-software/mapita/src/main/java/controlador/ControladorSesion.java
