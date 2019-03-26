@@ -43,12 +43,14 @@ Contributor(s):
   <session-factory>
     <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
     <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
-    <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/mapita</property>
-    <property name="hibernate.connection.username">mayonesa</property>
-    <property name="hibernate.connection.password">qwerty</property>
-    <property name="hibernate.show_sql">true</property>
-    <property name="hibernate.current_session_context_class">thread</property>
-    <mapping resource="com/mycompany/mapita/modelo/Usuario.hbm.xml"/>
-    <mapping resource="com/mycompany/mapita/modelo/Marcador.hbm.xml"/>
+    <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/spig</property>
+    <property name="hibernate.connection.username">dev_spig</property>
+    <property name="hibernate.connection.password">gips_gips5</property>
+    <mapping resource="modelo/Comentario.hbm.xml"/>
+    <mapping resource="modelo/Tema.hbm.xml"/>
+    <mapping resource="modelo/Comentarista.hbm.xml"/>
+    <mapping resource="modelo/Califica.hbm.xml"/>
+    <mapping resource="modelo/Marcador.hbm.xml"/>
+    <mapping resource="modelo/Informador.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>

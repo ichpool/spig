@@ -40,7 +40,11 @@ made subject to such option by the copyright holder.
 Contributor(s):
 -->
 <hibernate-reverse-engineering>
-  <schema-selection match-catalog="mapita" match-schema="public"/>
-  <table-filter match-name="usuario"/>
+  <schema-selection match-catalog="spig" match-schema="public"/>
+  <table-filter match-name="comentario"/>
+  <table-filter match-name="tema"/>
+  <table-filter match-name="informador"/>
   <table-filter match-name="marcador"/>
+  <table-filter match-name="califica"/>
+  <table-filter match-name="comentarista"/>
 </hibernate-reverse-engineering>
