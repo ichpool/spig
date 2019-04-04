@@ -6,8 +6,9 @@ https://templatemo.com/tm-518-sentra
 
 */
 
-body {
+html, body {
   font-family: 'Open Sans', sans-serif;
+   overflow-x: hidden;
 }
 
 p {
@@ -53,7 +54,8 @@ p {
 .section-heading em {
   font-style: normal;
   font-weight: 700;
-  color: #45489a;
+  color: #3BA8BD;
+  text-shadow: 0 0 30px #000;
 }
 
 .section-heading p {
@@ -68,7 +70,7 @@ p {
 .white-button a {
   font-size: 13px;
   font-weight: 600;
-  color: #45489a;
+  color: #3BA8BD;
   text-transform: capitalize;
   background-color: #fff;
   display: inline-block;
@@ -81,7 +83,7 @@ p {
 }
 
 .white-button a:hover {
-  background-color: #45489a;
+  background-color: #3BA8BD;
   color: #fff;
 }
 
@@ -90,7 +92,7 @@ p {
   font-weight: 600;
   color: #fff;
   text-transform: capitalize;
-  background-color: #45489a;
+  background-color: #3BA8BD;
   display: inline-block;
   height: 44px;
   line-height: 44px;
@@ -102,7 +104,7 @@ p {
 
 .accent-button a:hover {
   background-color: #fff;
-  color: #45489a;
+  color: #3BA8BD;
 }
 
 header {
@@ -486,7 +488,7 @@ header {
 }
 
 #featured .owl-dots .active span {
-  background-color: #45489a!important;
+  background-color: #3BA8BD!important;
 }
 
 #featured .owl-dots button {
@@ -522,7 +524,7 @@ header {
 }
 
 #featured .owl-nav span:hover {
-  background-color: #45489a;
+  background-color: #3BA8BD;
   color: #fff;
 }
 
@@ -654,7 +656,7 @@ header {
   overflow: hidden;
 }
 
-.box-video .bg-video body{
+.box-video .bg-video{
   position: absolute;
   top: 0;
   left: 0;
@@ -736,7 +738,7 @@ header {
   height: 90px;
   width: 100%;
   background-color: #eee;
-  border-bottom: 10px solid #45489a;
+  border-bottom: 10px solid #3BA8BD;
 }
 
 #blog .tabs li {
@@ -762,7 +764,7 @@ header {
 }
 
 #blog .tabs a:hover {
-  color: #45489a;
+  color: #3BA8BD;
 }
 
 
@@ -771,7 +773,7 @@ header {
 }
 
 #blog .tabs .active {
-  background-color: #45489a;
+  background-color: #3BA8BD;
   color: #fff;
 }
 
@@ -890,7 +892,7 @@ header {
   font-weight: 600;
   color: #fff;
   text-transform: capitalize;
-  background-color: #45489a;
+  background-color: #3BA8BD;
   display: inline-block;
   height: 44px;
   line-height: 24px;
@@ -918,6 +920,8 @@ header {
   display: inline-block;
   text-align: center;
   width: 100%;
+  bottom: 0;
+  position: absolute;
 }
 
 .footer p {
@@ -1082,9 +1086,16 @@ header {
 }
 
 body {
-    background-image: url("../img/slide_3.jpg");
+    background-image: url("resources/img/slide_3.jpg");
     height: 100%;
-    background-position: center;
+    background-position: initial;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.section-heading div {
+  font-style: normal;
+  font-weight: 700;
+  text-shadow: 0 0 30px #000;
+  color: #FFF;
 }

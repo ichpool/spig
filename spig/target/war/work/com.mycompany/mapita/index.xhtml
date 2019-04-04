@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <f:view>
+        <h:head>
+            <title>Inicio</title>
+            <h:outputStylesheet name="css/estilos.css"/>
+        </h:head>
+        <h:body>
+            <header>
+                <h1>Mapita</h1>
+                <h:form id="busqueda">
+                    <p:inputText type="search " value="#{buscaPorNombre.nombre}"/>
+                    <p:commandButton action="#{buscaPorNombre.buscaPorNombre()}" value="BuscaPorNombre"/>
+                </h:form>
+            </header>
+            <main>
+                <section>
+                    <a href="elimina_usuario.xhtml">Eliminar Usuario</a>
+                    <div id="mapa"></div>
+                </section>
+                <aside>
+                    <h2>
+                        Registrate
+                    </h2>
+                    <h:form>
+                        <p:inputText id="nombre" value="#{agregaUsuario.nombre}" placeholder="Nombre"/> <br/>
+                        <p:inputText id="correo" value="#{agregaUsuario.correo}" placeholder="Correo"/> <br/>
+                        <p:password id="constrasenia" value="#{agregaUsuario.contrasenia}" placeholder="Contrasenia"/> <br/>
+                        <p:calendar id="fechanacimiento" value="#{agregaUsuario.fechanacimiento}" placeholder="Fecha de nacimiento"/> <br/>
+                        <p:commandButton action="#{agregaUsuario.agregaUsuario()}" value="Registrame" ajax="false" />
+                    </h:form>
+                </aside>
+            </main>
+            <footer>
+                <h3>
+                    Lorem ipsum dolor sit amet.
+                </h3>
+            </footer>
+
+        </h:body>
+    </f:view>
+</html>

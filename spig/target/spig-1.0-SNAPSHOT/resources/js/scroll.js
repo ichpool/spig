@@ -19,7 +19,7 @@
                         var st = $(this).scrollTop();
 
                         // Make sure they scroll more than delta
-                        if(Math.abs(lastScrollTop - st) <= delta) 
+                        if(Math.abs(lastScrollTop - st) <= delta)
                             return;
 
                         // If they scrolled down and are past the navbar, add class .nav-up.
@@ -39,13 +39,14 @@
 
 
                     var images = [
-                      "resources/img/slide_1.jpg",
-                      "resources/img/slide_2.jpg",
-                      "resources/img/slide_3.jpg"
+                      "https://farm4.staticflickr.com/3169/3113365979_a1e554a76c_b.jpg",//"resources/img/slide_1.jpg",
+                      "http://www.ecosur.mx/wp-content/uploads/2017/02/Linea6.jpg",
+                      "http://www.marquezestudioimagendigital.com/wp-content/uploads/2016/11/Cuetzalan-8671-Editar.jpg",
+                      "http://www.revista.unam.mx/vol.15/num8/art64/img/img7.jpg"
                     ];
 
                     var bdy = document.getElementsByTagName("BODY")[0];
-
+                    bdy.style.backgroundImage = "url(" + images[2] + ")";
                     var i = 0;
                     setInterval(function() {
                           bdy.style.backgroundImage = "url(" + images[i] + ")";

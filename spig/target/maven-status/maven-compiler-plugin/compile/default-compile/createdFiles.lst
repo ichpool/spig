@@ -1,7 +1,13 @@
+modelo/InformadorDAO.class
 modelo/Marcador.class
+modelo/HibernateUtil.class
 modelo/Informador.class
 modelo/CalificaId.class
 modelo/Comentarista.class
+controlador/RegistrarInformador.class
+modelo/AbstractDAO.class
 modelo/Tema.class
 modelo/Comentario.class
+auxiliares/SendEmail.class
+auxiliares/FileToStringer.class
 modelo/Califica.class

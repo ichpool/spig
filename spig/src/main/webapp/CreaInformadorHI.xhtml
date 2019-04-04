@@ -107,44 +107,38 @@ https://templatemo.com/tm-518-sentra
 
                     <div class="page-content">
                         <section id="contact" class="content-section">
-                            <center>
-                            <!--<div id="map">
-
-                                     How to change your own map point
-                                       1. Go to Google Maps
-                                       2. Click on your location point
-                                       3. Click "Share" and choose "Embed map" tab
-                                       4. Copy only URL and paste it within the src="" field below
-
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1197183.8373802372!2d-1.9415093691103689!3d6.781986417238027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb96f349e85efd%3A0xb8d1e0b88af1f0f5!2sKumasi+Central+Market!5e0!3m2!1sen!2sth!4v1532967884907" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-                            </div> -->
-                            </center>
                             <div id="contact-content">
                                 <div class="section-heading">
-                                    <h1>Crear Informador<br></br><em>SPIG</em></h1>
+                                    <h1>
+                                        <div>Crear Informador</div>
+                                        <em>SPIG</em>
+                                    </h1>
 
                                 </div>
                                 <div class="section-content">
-                                    <form id="contact" action="#" method="post">
+                                    <h:form id="contact">
                                         <div class="row">
                                             <div class="col-md-6">
                                               <fieldset>
-                                                    <input name="name" type="text" class="form-control" id="name" placeholder="Nombre del informador..." required=""></input>
+                                                  <p:inputText class="texto" id="nombre" value="#{registrarInformador.nombre}" required="true" placeholder="Nombre"  validatorMessage="Por favor ingresa tu nombre" requiredMessage="Por favor ingresa tu nombre"/>
                                               </fieldset>
                                             </div>
                                             <div class="col-md-6">
                                               <fieldset>
-                                                  <input name="email" type="email" class="form-control" id="email" placeholder="Correo electrónico del informador..." required=""></input>
+                                                  <p:inputText class="texto" id="correo" value="#{registrarInformador.correo}" required="true" placeholder="Correo" validatorMessage="Debe ser un correo valido">
+                                                    <f:validateRegex pattern="^[_A-Za-z0-9-\+]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$" />
+                                                    <p:keyFilter regEx="^[_A-Za-z0-9-\+]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$"/>
+                                                  </p:inputText>
                                               </fieldset>
                                             </div>
                                             <div class="col-md-12">
                                               <fieldset>
-                                                <button type="submit" id="form-submit" class="btn">Crear Informador</button>
+                                                <p:commandButton id="form-submit" class="texto btn" action="#{registrarInformador.agregaInformador()}" value="Registrar" style="margin-right:20px;" ajax="false"/>
                                               </fieldset>
                                             </div>
                                         </div>
-                                    </form>
+                                        <p:growl id="growl" life="4000" />
+                                    </h:form>
                                 </div>
                             </div>
                         </section>

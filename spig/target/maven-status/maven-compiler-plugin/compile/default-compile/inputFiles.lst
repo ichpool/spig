@@ -1,7 +1,13 @@
 /home/n-droid/Documentos/6sem/ingenieria/spig/spig/src/main/java/modelo/Comentario.java
+/home/n-droid/Documentos/6sem/ingenieria/spig/spig/src/main/java/controlador/RegistrarInformador.java
+/home/n-droid/Documentos/6sem/ingenieria/spig/spig/src/main/java/auxiliares/SendEmail.java
+/home/n-droid/Documentos/6sem/ingenieria/spig/spig/src/main/java/modelo/InformadorDAO.java
+/home/n-droid/Documentos/6sem/ingenieria/spig/spig/src/main/java/auxiliares/FileToStringer.java
 /home/n-droid/Documentos/6sem/ingenieria/spig/spig/src/main/java/modelo/CalificaId.java
 /home/n-droid/Documentos/6sem/ingenieria/spig/spig/src/main/java/modelo/Marcador.java
 /home/n-droid/Documentos/6sem/ingenieria/spig/spig/src/main/java/modelo/Informador.java
 /home/n-droid/Documentos/6sem/ingenieria/spig/spig/src/main/java/modelo/Califica.java
+/home/n-droid/Documentos/6sem/ingenieria/spig/spig/src/main/java/modelo/AbstractDAO.java
+/home/n-droid/Documentos/6sem/ingenieria/spig/spig/src/main/java/modelo/HibernateUtil.java
 /home/n-droid/Documentos/6sem/ingenieria/spig/spig/src/main/java/modelo/Comentarista.java
 /home/n-droid/Documentos/6sem/ingenieria/spig/spig/src/main/java/modelo/Tema.java
