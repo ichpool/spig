@@ -93,6 +93,30 @@ public class InformadorDAO extends AbstractDAO<Informador>{
         return informadores;
     }
 
+    public List<Informador> buscaPorCorreoLike(String correo){
+       if(correo.equals(""))
+           return null;
+        List<Informador> informadores =null;
+        Session session = this.sessionFactory.openSession();
+        Transaction tx = null;
+        try{
+            tx = session.beginTransaction();
+            String hql = "From Informador  u where u.correo like concat('%',:correo,'%')";
+            Query query = session.createQuery(hql);
+            query.setParameter("correo", correo);
+            informadores = (List<Informador>)query.list();
+            tx.commit();
+        }catch(HibernateException e){
+            if(tx!=null){
+                tx.rollback();
+            }
+            e.printStackTrace();
+        }finally{
+            session.close();
+        }
+        return informadores;
+    }
+
     public Informador buscaPorCorreo(String correo){
        if(correo.equals(""))
            return null;

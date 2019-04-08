@@ -120,12 +120,12 @@ https://templatemo.com/tm-518-sentra
                             <div class="row">
                                 <div class="col-md-9">
                                   <fieldset>
-                                      <p:inputText class="texto" id="nombre" value="#{consultaInformador.like}" required="false" placeholder="Nombre o correo"/>
+                                      <p:inputText class="texto" id="nombre" value="#{consultarInformador.info}" required="false" placeholder="Nombre o correo"/>
                                   </fieldset>
                                 </div>
                                 <div class="col-md-3">
                                   <fieldset>
-                                        <h:selectOneRadio value="#{consultaInformador.tipoBusqueda}" required="true" validatorMessage="falta el tipo de búsqueda" requiredMessage="falta el tipo de búsqueda">
+                                        <h:selectOneRadio value="#{consultarInformador.tipoBusqueda}" required="true" validatorMessage="falta el tipo de búsqueda" requiredMessage="falta el tipo de búsqueda">
                                             <f:selectItem itemValue="nombre" itemLabel="por nombre    ." />
                                             <f:selectItem itemValue="correo" itemLabel="por correo." />
                                             <f:selectItem itemValue="todos" itemLabel="todos." />
@@ -134,12 +134,18 @@ https://templatemo.com/tm-518-sentra
                                 </div>
                                 <div class="col-md-12">
                                   <fieldset>
-                                    <p:commandButton id="form-submit" class="texto btn" action="#{consultaInformador.consultaInformador()}" value="Consultar" style="margin-right:20px;" ajax="false"/>
+                                    <p:commandButton id="form-submit" class="texto btn" action="#{consultarInformador.busca()}" value="Consultar" style="margin-right:20px;" ajax="false"/>
                                   </fieldset>
                                 </div>
                             </div>
                             <p:growl id="growl" life="4000" />
                         </h:form>
+                    </div>
+                    <div id="result-content" class="content-section">
+                        Resultado:
+                        <p:dataScroller value="#{consultarInformador.resultado}" var="resultado">
+                            <em> #{resultado.correo} </em>  --------  #{resultado.nombre} <br/>
+                        </p:dataScroller>
                     </div>
                 </div>
             </section>

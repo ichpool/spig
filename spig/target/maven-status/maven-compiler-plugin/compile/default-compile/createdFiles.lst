@@ -12,3 +12,4 @@ modelo/Comentario.class
 auxiliares/SendEmail.class
 auxiliares/FileToStringer.class
 modelo/Califica.class
+controlador/ConsultarInformador.class
