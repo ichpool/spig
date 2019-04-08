@@ -1,5 +1,6 @@
 /home/n-droid/Documentos/6sem/ingenieria/spig/spig/src/main/java/modelo/Comentario.java
 /home/n-droid/Documentos/6sem/ingenieria/spig/spig/src/main/java/controlador/RegistrarInformador.java
+/home/n-droid/Documentos/6sem/ingenieria/spig/spig/src/main/java/controlador/EliminarInformador.java
 /home/n-droid/Documentos/6sem/ingenieria/spig/spig/src/main/java/auxiliares/SendEmail.java
 /home/n-droid/Documentos/6sem/ingenieria/spig/spig/src/main/java/modelo/InformadorDAO.java
 /home/n-droid/Documentos/6sem/ingenieria/spig/spig/src/main/java/auxiliares/FileToStringer.java

@@ -11,7 +11,7 @@
     <h:head>
         <meta charset="utf-8"> </meta>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> </meta>
-        <title>SPIG</title>
+        <title>SPIG - Admin</title>
 
 <!--
 
@@ -34,6 +34,8 @@ https://templatemo.com/tm-518-sentra
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet"/>
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true"></script>
+
     </h:head>
 
             <h:body>
@@ -52,8 +54,8 @@ https://templatemo.com/tm-518-sentra
                             <nav>
                                 <ul class="nav navbar-nav">
                                     <li><a href="CreaInformadorHI.xhtml">Crear Informador</a></li>
-                                    <li><a href="#featured">Consultar informadores</a></li>
-                                    <li><a href="#projects">Eliminar</a></li>
+                                    <li><a href="ConsultaInformadorHI.xhtml">Consultar informadores</a></li>
+                                    <li><a href="EliminaInformadorHI.xhtml">Eliminar</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -66,32 +68,32 @@ https://templatemo.com/tm-518-sentra
                         <nav>
                             <ul>
                                 <li>
-                                    <a href="#top">
+                                    <h:link outcome="index.xhtml" >
                                         <span class="rect"></span>
                                         <span class="circle"></span>
                                         Home
-                                    </a>
+                                    </h:link>
                                 </li>
                                 <li>
-                                    <a href="CreaInformadorHI.xhtml">
+                                    <p:link outcome="/CreaInformadorHI" >
                                         <span class="rect"></span>
                                         <span class="circle"></span>
                                         Crear Informador
-                                    </a>
+                                    </p:link>
                                 </li>
                                 <li>
-                                    <h:link outcome="CreaInformadorHI.xhtml" >
+                                    <h:link outcome="ConsultaInformadorHI.xhtml" >
                                         <span class="rect"></span>
                                         <span class="circle"></span>
                                         Consultar Informadores
                                     </h:link>
                                 </li>
                                 <li>
-                                    <a href="#video">
+                                    <h:link outcome="EliminaInformadorHI.xhtml" >
                                         <span class="rect"></span>
                                         <span class="circle"></span>
                                         Eliminar Informador
-                                    </a>
+                                    </h:link>
                                 </li>
                             </ul>
                         </nav>
@@ -108,23 +110,16 @@ https://templatemo.com/tm-518-sentra
                     <div class="page-content">
                         <section id="contact" class="content-section">
                             <center>
-                            <!--<div id="map">
-
-                                     How to change your own map point
-                                       1. Go to Google Maps
-                                       2. Click on your location point
-                                       3. Click "Share" and choose "Embed map" tab
-                                       4. Copy only URL and paste it within the src="" field below
-
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1197183.8373802372!2d-1.9415093691103689!3d6.781986417238027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb96f349e85efd%3A0xb8d1e0b88af1f0f5!2sKumasi+Central+Market!5e0!3m2!1sen!2sth!4v1532967884907" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-                            </div> -->
+                                <p:gmap id="map" center="41.381542, 2.122893" zoom="15" type="HYBRID" style="height: 500px;"/>
                             </center>
                             <div id="contact-content">
                                 <div class="section-heading">
-                                    <h1>Contacta<br></br><em>SPIG</em></h1>
-                                    <p>Curabitur hendrerit mauris mollis ipsum vulputate rutrum.
-                                    <br></br>Phasellus luctus odio eget dui imperdiet.</p>
+                                    <h1>
+                                        <div>Regístrate</div>
+                                        <em>SPIG</em>
+                                    </h1>
+                                    <p>Conviértete en un comentarista
+                                    <br></br>y conoce muchos lugares.</p>
 
                                 </div>
                                 <div class="section-content">

@@ -1,6 +1,7 @@
 modelo/InformadorDAO.class
 modelo/Marcador.class
 modelo/HibernateUtil.class
+controlador/EliminarInformador.class
 modelo/Informador.class
 modelo/CalificaId.class
 modelo/Comentarista.class

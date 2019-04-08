@@ -58,7 +58,7 @@ public class RegistrarInformador {
             String html_string = fts.readFile("informador_mail.html");
             html_string = html_string.replace("[[nombre]]",nombre);
             html_string = html_string.replace("[[password]]",contrasenia);
-            SendEmail.send("vazquezlisandro673c@gmail.com",
+            SendEmail.send(correo,
                     "Bienvenido a SPIG",
                     html_string);
             FacesMessage message = new FacesMessage(FacesMessage.SEVERITY_INFO, "Registrado", null);

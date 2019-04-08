@@ -921,7 +921,7 @@ header {
   text-align: center;
   width: 100%;
   bottom: 0;
-  position: absolute;
+  position: fixed;
 }
 
 .footer p {
@@ -1081,8 +1081,10 @@ header {
 
 
 #map {
-    width: 70%;
+    width: 80%;
     padding-top: 7%;
+    top: 30px;
+    height: 500px;
 }
 
 body {
@@ -1098,4 +1100,15 @@ body {
   font-weight: 700;
   text-shadow: 0 0 30px #000;
   color: #FFF;
+}
+
+.section-heading p {
+  font-style: normal;
+  font-weight: 700;
+  text-shadow: 0 0 30px #000;
+  color: #FFF;
+}
+
+td label {
+    color: #FFF;
 }

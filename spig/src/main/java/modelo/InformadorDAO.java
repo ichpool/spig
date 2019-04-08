@@ -39,7 +39,7 @@ public class InformadorDAO extends AbstractDAO<Informador>{
      * @param informador
      */
     @Override
-    public  void update(Informador informador){
+    public void update(Informador informador){
         super.update(informador);
     }
 
@@ -67,11 +67,11 @@ public class InformadorDAO extends AbstractDAO<Informador>{
      */
     public List<Informador> findAll(){
         return super.findAll(Informador.class);
-
     }
-    public List<Informador> buscaPorNombre(String nombre){
-//        if(nombre.equals(""))
-//            return null;
+
+    public List<Informador> buscaPorNombreLike(String nombre){
+       if(nombre.equals(""))
+           return null;
         List<Informador> informadores =null;
         Session session = this.sessionFactory.openSession();
         Transaction tx = null;
@@ -91,6 +91,30 @@ public class InformadorDAO extends AbstractDAO<Informador>{
             session.close();
         }
         return informadores;
+    }
+
+    public Informador buscaPorCorreo(String correo){
+       if(correo.equals(""))
+           return null;
+        Informador informador = null;
+        Session session = this.sessionFactory.openSession();
+        Transaction tx = null;
+        try{
+            tx = session.beginTransaction();
+            String hql = "From Informador i where i.correo = :correo";
+            Query query = session.createQuery(hql);
+            query.setParameter("correo", correo);
+            informador = (Informador)query.uniqueResult();
+            tx.commit();
+        }catch(HibernateException e){
+            if(tx!=null){
+                tx.rollback();
+            }
+            e.printStackTrace();
+        }finally{
+            session.close();
+        }
+        return informador;
     }
 
     public Informador buscaPorCorreoContrasenia(String correo,String contrasenia){
